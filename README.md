@@ -1,4 +1,4 @@
-https://github.com/Danisimus-BB/posmotri_v_okno
+https://github.com/Danisimus-BB/slozhno-sosredotochitsya
 # Мой третий проект от Яндекс Практикума - "Сложно сосредоточиться". 
 ## Главы
 - [Описание](#описание)
