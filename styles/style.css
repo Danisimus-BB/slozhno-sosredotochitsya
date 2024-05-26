@@ -28,7 +28,7 @@
 
 .header__theme-menu-list {
   display: grid;
-  gap: 25px;
+  gap: 14px;
   padding-top: 20px;
   grid-template-columns: repeat(3, auto);
   justify-content: center;
@@ -54,7 +54,9 @@
   font-weight: 400;
   border: none;
   cursor: pointer;
+  padding: 0 12px 0 12px;
 }
+
 .header__theme-menu-button:hover {
   border: 1px solid var(--hoover-color, rgba(225, 0, 112, 0.4));
 }
@@ -92,8 +94,8 @@
   color: var(--accent-color, #ff0070);
   inset-inline-end: 0;
   inset-block-start: 0;
-  top: 20px;
-  right: 25px;
+  top: 18px;
+  right: 20px;
 }
 
 .decorative-rec-icon::after {
@@ -120,7 +122,7 @@
   inset-block-start: 0;
   inset-inline-end: 0;
   top: 20px;
-  right: 25px;
+  right: 20px;
 }
 
 .decorated-zone::after {
@@ -132,7 +134,7 @@
   border-left: 1px solid var(--border-color, #ff0070);
   inset-block-end: 0;
   bottom: 20px;
-  left: 25px;
+  left: 20px;
 }
 /* конец стилей для декоративных уголков по краям */
 
@@ -152,9 +154,12 @@
   grid-column: 1;
   grid-row: 1 / span 2;
 }
+.multitask-block {
+  margin-bottom: 10px;
+}
 
 .multitask-title {
-  margin-bottom 10px;
+  margin-bottom: 10px;
   color: var(--h3-title-color);
   background-color: var(--accent-color, #ff0070);
   font-size: 18px;
@@ -162,7 +167,6 @@
 
 .multitask-text {
   grid-column: 2;
-
 }
 .dopamine-title {
   grid-column: 2;
@@ -198,7 +202,7 @@ a:focus-visible {
   margin: 0 20px 0 20px;
 }
 
-.causes-design { 
+.causes-design {
   flex: 0 0 31.9%;
 }
 /* конец блок "почему" */
@@ -233,7 +237,7 @@ a:focus-visible {
   color: var(--h2-title-color, #ff0070);
   font-size: 18px;
 }
-/* общий класс для всех текстов по замечанию ревьюера*/ 
+/* общий класс для всех текстов по замечанию ревьюера*/
 .text-design {
   color: var(--text-color, #f1b2ce);
 }
@@ -306,11 +310,8 @@ a:focus-visible {
 
 /* начало блока медия */
 @media (width < 1024px) {
- 
   .title-decor {
     max-width: 364px;
-    
-   
   }
 }
 
@@ -320,9 +321,9 @@ a:focus-visible {
     flex-direction: column;
     align-items: flex-end;
     margin-top: 170px;
-    margin-right: 27px;
-    gap: 10px;
-}
+    margin-right: 22px;
+    gap: 14px;
+  }
   .header-title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     line-height: 100px;
@@ -337,32 +338,15 @@ a:focus-visible {
     margin-left: 10px;
     margin-right: -10px;
   }
-
-  .decorated-zone::before {
-    margin-right: -5px;
-    
-}
-  
-  .decorated-zone::after {
-    margin-left: -5px;
-    
-  }
-
-  .decorative-rec-icon {
-    margin-top: -2px;
-    margin-right: -5px;
-  }
   .why-title {
     max-width: 237px;
-    max-height: 335px;
   }
   .why-section {
-    gap: 10px 20px; 
+    gap: 10px 20px;
   }
 
   .what-section-design {
     flex-direction: column;
-   
   }
 
   .what-title {
@@ -380,22 +364,22 @@ a:focus-visible {
 }
 
 @media (width <= 767px) {
- 
-.decorated-zone::before {
-  margin-right: -15px;
-  margin-top: -10px;
-}
-.decorated-zone::after {
-  margin-left: -15px;
-  margin-bottom: -10px;
-}
-.decorative-rec-icon {
-  margin-top: -12px;
-  margin-right: -15px;
-}
+  .decorated-zone::before {
+    margin-right: -10px;
+    margin-top: -10px;
+  }
+  .decorated-zone::after {
+    margin-left: -10px;
+    margin-bottom: -10px;
+  }
+  .decorative-rec-icon {
+    margin-top: -10px;
+    margin-right: -10px;
+  }
   .header__theme-menu-list {
-    margin-top: 53px;
-    margin-right: 18px;
+    margin-top: 55px;
+    margin-right: 11px;
+    gap: 13px;
   }
   .header-title {
     margin-left: 10px;
@@ -403,10 +387,10 @@ a:focus-visible {
   .title-decor {
     margin-left: 10px;
     margin-right: -20px;
-}
-.what-title {
-  max-width: 355px;
-}
+  }
+  .what-title {
+    max-width: 355px;
+  }
   .why-section {
     margin: 40px 10px 50px;
     display: flex;
@@ -441,8 +425,8 @@ a:focus-visible {
     max-width: 355px;
   }
   .five-advice {
-      margin-bottom: 20px;
-      margin-top: -20px;
+    margin-bottom: 20px;
+    margin-top: -20px;
   }
   .grid-section {
     margin-top: 20px;
@@ -461,5 +445,8 @@ a:focus-visible {
   .advice-text {
     max-width: none;
   }
+  .footer-title {
+    font-size: 116px;
+  }
 }
-/* конец блока медия */ 
+/* конец блока медия */

@@ -48,5 +48,11 @@
     .theme_auto .title-decor {
       color: var(--text-color);
     }
+    .theme_auto .multitask-title {
+      color: var(--text-color);
+    }
+    .theme_auto .five-advice {
+      color: var(--text-color);
+    }
   }
 }
